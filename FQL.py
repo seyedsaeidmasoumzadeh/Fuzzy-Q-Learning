@@ -27,9 +27,9 @@ class Model(object):
         self.action_set_length = action_set_length
         self.fis = fis
         if self.q_initial_value =='random':
-            self.q_table = np.random.random((self.fis.get_number_of_rulls(), self.action_set_length))
+            self.q_table = np.random.random((self.fis.get_number_of_rules(), self.action_set_length))
         if self.q_initial_value == 'zero':
-            self.q_table = np.zeros((self.fis.get_number_of_rulls(), self.action_set_length))
+            self.q_table = np.zeros((self.fis.get_number_of_rules(), self.action_set_length))
 
     def CalculateTruthValue(self,state_value):
         self.R = []
