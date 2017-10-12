@@ -1,5 +1,5 @@
 ## Fuzzy-Q-Learning
-A Python implementation of Fuzzy Q-Learning (FQL) for any controllers with continues states. As an example, the Pole Balancing problem has been implemented and it is inside this package.
+A Python implementation of Fuzzy Q-Learning (FQL) for any controllers with continues states. As an example, the Pole Balancing problem (cartpole.py) has been implemented and it is inside this package.
 
 ## Implementation:
 Fuzzy Q-Learning is a fuzzy extension of Q-learning algorithm. For creating an FQL model you first need to specify the input states and their corresponding fuzzy sets and then build your Fuzzy Inference System (FIS) to integrate with the Q-Learning algorithm. In this code, two type of fuzzy membership functions have been implemented : 1) Triangular and 2) Trapezoidal. For more information please read the following publications:
