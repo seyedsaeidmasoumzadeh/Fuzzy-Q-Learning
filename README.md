@@ -10,7 +10,7 @@ Jouffe, L. (1998). Fuzzy inference system learning by reinforcement methods. IEE
 ```
 
 
-You can create as many as needed fuzzy sets, initialise them, and assign them to an input state variable to build your FIS as follows:
+You can create fuzzy sets (as many as needed), initialise them, and assign them to an input state variable to build your FIS as follows:
 ```
 x1 = StateVariable.InputStateVariable(FuzzySet.Trapeziums(-2.4, -2, -1, -0.5), FuzzySet.Trapeziums(-1, -0.5, 0.5 , 1), FuzzySet.Trapeziums(0.5, 1, 2, 2.4) )
 x2 = StateVariable.InputStateVariable(FuzzySet.Triangles(-2.4,-0.5,1), FuzzySet.Triangles(-0.5,1,2.4))
@@ -21,8 +21,7 @@ Then you can buid your FQL model as follow:
 model = FQL.Model(gamma = 0.9, alpha = 0.1 , ee_rate = 0.999, q_initial_value = 'zero', action_set_length = 21, fis = fis)
 ```
 
-For creating your reward function, applying the action to the environment and getting new states. You just need to change Environment class inside the code.
-
+You just need to change Environment class inside the code to create your reward function, apply the actions to the environment and getting new states. 
 
 ## Licence
 
