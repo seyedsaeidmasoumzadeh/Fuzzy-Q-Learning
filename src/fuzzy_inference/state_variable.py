@@ -1,4 +1,3 @@
-
 class InputStateVariable(object):
     fuzzy_set_list = []
 

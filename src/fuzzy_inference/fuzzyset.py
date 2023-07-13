@@ -13,14 +13,15 @@ class Trapeziums(object):
         elif input_value < self.left_top:
             membership_value = (input_value - self.left) / (self.left_top - self.left)
         elif input_value > self.right_top:
-            membership_value = (input_value - self.right) / (self.right_top - self.right)
+            membership_value = (input_value - self.right) / (
+                self.right_top - self.right
+            )
         else:
             membership_value = 0.0
         return membership_value
 
 
 class Triangles(object):
-
     def __init__(self, left, top, right):
         self.left = left
         self.right = right
@@ -36,8 +37,3 @@ class Triangles(object):
         elif input_value > self.top:
             membership_value = (input_value - self.right) / (self.top - self.right)
         return membership_value
-
-
-
-
-
